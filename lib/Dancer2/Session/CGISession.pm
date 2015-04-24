@@ -118,15 +118,15 @@ This module is a work in progress
 
 You can set CGI::Session drivers and parameters using Dancer2 configuration
 
-session: "CGISession"
+    session: "CGISession"
 
-engines:
-  session:
-    CGISession:
-      driver: "driver:file:
-      driver_params:
-        "Directory": "/tmp
-      name: "session name"
+    engines:
+      session:
+        CGISession:
+          driver: "driver:file:
+          driver_params:
+            "Directory": "/tmp
+          name: "session name"
 
 =head1 AUTHOR
 
