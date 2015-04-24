@@ -39,7 +39,6 @@ use Test::More;
 use Plack::Test;
 use HTTP::Request::Common;
 use HTTP::Cookies;
-use Data::Dumper;
 
 my $test = Plack::Test->create( TestServer->to_app );
 my $jar = HTTP::Cookies->new( autosave => 1, );
