@@ -48,7 +48,7 @@ sub generate_id {
         $class->driver,
         undef,
         $class->driver_params
-    );
+    ) or die CGI::Session->errstr();;
     $cgi_session->expire( $class->session_duration );
     $cgi_session->name( $class->cookie_name );
 
@@ -59,17 +59,24 @@ sub generate_id {
 sub _retrieve {
     my ( $class, $id ) = @_;
 
-    my $session = $class->get_cgi_session( $id );
+    my $cgi_session = $class->get_cgi_session( $id );
+    if( $cgi_session->is_empty or $cgi_session->is_expired ) {
+        # CGI Session has been removed from the server, die here, Dancer2::Core::Role::Session
+        # knows how to deal with that, warn Caller by dying
+        die "CGI Session has disappeared";
+    }
 
-    return $session->dataref();
+    return $cgi_session->dataref();
 }
 
 sub _destroy {
     my ( $class, $id ) = @_;
 
     my $cgi_session = $class->get_cgi_session( $id );
-    $cgi_session->delete;
-    $cgi_session->flush;
+    if( defined $cgi_session->id ) {
+        $cgi_session->delete;
+        $cgi_session->flush;
+    }
 }
 
 sub _flush {
@@ -83,14 +90,8 @@ sub _flush {
 sub get_cgi_session {
     my ( $class, $id ) = @_;
 
-    #Retrieve the CGI::Session linked to the Dancer2 one
     my $cgi_session = CGI::Session->load( $class->driver, $id, $class->driver_params )
         or die CGI::Session->errstr();
-
-    if( $cgi_session->is_empty or $cgi_session->is_expired ) {
-        #CGI Session has been removed from the server, destroy the Dancer session as well
-        $class->destroy();
-    }
 
     return $cgi_session;
 }
