@@ -1,4 +1,6 @@
 Revision history for Dancer2-Session-CGISession
 
 {{$NEXT}}
-        - Initial release
+
+0.02  2015-04-26 23:26:34 CST
+        - Fix a deep recursion issue when CGI Session was deleted from outside dancer

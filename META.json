@@ -38,6 +38,7 @@
       "runtime" : {
          "requires" : {
             "CGI::Session" : "4.48",
+            "Dancer2" : "0.159003",
             "perl" : "5.008005"
          }
       },
@@ -62,7 +63,7 @@
          "web" : "https://github.com/pierre-vigier/Dancer2-Session-CGISession"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Pierre <pierre@bootic.com>"
    ]

@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/pierre-vigier/Dancer2-Session-CGISession.svg?branch=master)](https://travis-ci.org/pierre-vigier/Dancer2-Session-CGISession)
-[![Coverage Status](https://coveralls.io/repos/pierre-vigier/Dancer2-Session-CGISession/badge.png?branch=master)](https://coveralls.io/r/pierre-vigier/Dancer2-Session-CGISession?branch=master)
-
 # NAME
 
 Dancer2::Session::CGISession - Share Dancer Session with CGI::Session
