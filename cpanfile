@@ -1,5 +1,6 @@
 requires 'perl', '5.008005';
 
+requires 'Dancer2', '0.159003';
 requires 'CGI::Session', '4.48';
 
 on test => sub {
