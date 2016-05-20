@@ -2,7 +2,7 @@ package Dancer2::Session::CGISession;
 
 use strict;
 use 5.008_005;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Moo;
 use Carp;
