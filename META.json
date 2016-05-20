@@ -4,29 +4,29 @@
       "Pierre VIGIER <pierre.vigier@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.035, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.047, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Dancer2-Session-CGISession",
    "no_index" : {
       "directory" : [
-         "t",
-         "xt",
+         "eg",
+         "examples",
          "inc",
          "share",
-         "eg",
-         "examples"
+         "t",
+         "xt"
       ]
    },
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.039"
+            "Module::Build::Tiny" : "0.034"
          }
       },
       "develop" : {
@@ -63,8 +63,9 @@
          "web" : "https://github.com/pierre-vigier/Dancer2-Session-CGISession"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_contributors" : [
+      "Jason Williams <jason.williams@optus.com.au>",
       "Pierre <pierre@bootic.com>"
    ]
 }

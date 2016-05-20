@@ -30,6 +30,10 @@ You can set CGI::Session drivers and parameters using Dancer2 configuration
 
 Pierre VIGIER <pierre.vigier@gmail.com>
 
+## Contributors
+
+jwilliams99 &lt;https://github.com/jwilliams99>
+
 # COPYRIGHT
 
 Copyright 2015- Pierre VIGIER
