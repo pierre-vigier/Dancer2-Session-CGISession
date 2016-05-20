@@ -83,6 +83,9 @@ sub _flush {
     my ( $class, $id, $data ) = @_;
 
     my $cgi_session = $class->get_cgi_session( $id );
+    foreach my $key (keys %{$data} ){
+        delete $$data{$key} if ($key =~ m/^_SESSION_/);
+    }
     $cgi_session->param( %{$data} );
     $cgi_session->flush;
 }
