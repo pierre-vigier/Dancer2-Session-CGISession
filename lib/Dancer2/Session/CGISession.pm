@@ -147,6 +147,8 @@ Pierre VIGIER E<lt>pierre.vigier@gmail.comE<gt>
 
 jwilliams99 E<lt>https://github.com/jwilliams99E<gt>
 
+Peter Mottram (SysPete) E<lt>peter@sysnix.comE<gt>
+
 =head1 COPYRIGHT
 
 Copyright 2015- Pierre VIGIER
