@@ -56,6 +56,13 @@ sub generate_id {
     return $cgi_session->id();
 }
 
+sub _change_id {
+    my ( $self, $old_id, $new_id ) = @_;
+    my $data = $self->_retrieve($old_id);
+    $self->_destroy($old_id);
+    $self->_flush($new_id, $data);
+}
+
 sub _retrieve {
     my ( $class, $id ) = @_;
 
