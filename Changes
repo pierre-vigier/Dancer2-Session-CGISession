@@ -1,6 +1,7 @@
 Revision history for Dancer2-Session-CGISession
 
 {{$NEXT}}
+        - Add support for Dancer2's upcoming change_session_id app method
 
 0.03  2016-05-20 14:32:16 SGT
         - Fix an issue with CGI default variable
