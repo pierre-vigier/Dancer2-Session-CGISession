@@ -1,6 +1,8 @@
 Revision history for Dancer2-Session-CGISession
 
 {{$NEXT}}
+
+0.04  2016-08-16 14:57:58 SGT
         - Add support for Dancer2's upcoming change_session_id app method
 
 0.03  2016-05-20 14:32:16 SGT

@@ -34,6 +34,8 @@ Pierre VIGIER <pierre.vigier@gmail.com>
 
 jwilliams99 &lt;https://github.com/jwilliams99>
 
+Peter Mottram (SysPete) <peter@sysnix.com>
+
 # COPYRIGHT
 
 Copyright 2015- Pierre VIGIER

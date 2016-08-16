@@ -63,9 +63,10 @@
          "web" : "https://github.com/pierre-vigier/Dancer2-Session-CGISession"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_contributors" : [
       "Jason Williams <jason.williams@optus.com.au>",
+      "Peter Mottram <peter@sysnix.com>",
       "Pierre <pierre@bootic.com>"
    ]
 }
